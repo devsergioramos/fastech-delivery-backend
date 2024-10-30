@@ -15,7 +15,7 @@ def on_startup():
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello World do cavazzini"}
 
 
 @app.post("/restaurantes/")
@@ -32,3 +32,4 @@ def listar_restaurantes():
     with Session(engine) as session:
         restaurantes = session.query(Restaurantes).all()
         return restaurantes
+
