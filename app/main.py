@@ -15,7 +15,7 @@ def on_startup():
 
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Olá Kauan"}
 
 
 @app.post("/restaurantes/")
